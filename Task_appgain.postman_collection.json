@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "5ca39d6a-28e2-41f8-8cb4-e1baad4e8c6e",
+		"name": "Task_appgain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25910187",
+		"_collection_link": "https://asd666-2218.postman.co/workspace/training-test-API~85f6a01c-ec5a-4cc2-a36f-cb73b11ce4b1/collection/25910187-5ca39d6a-28e2-41f8-8cb4-e1baad4e8c6e?action=share&source=collection_link&creator=25910187"
+	},
+	"item": [
+		{
+			"name": "upload_photo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "appApiKey",
+						"value": "dcffa92bda504e6c5f2ad8b04e453b54d2871d53c43a4a8e916e765d9a00"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "postman-cloud:///1efcdea8-16b0-42d0-8d90-6fbe50c4a28e"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/61a4858d0871b3000fb71d6f/upload",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"61a4858d0871b3000fb71d6f",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
